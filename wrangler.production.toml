@@ -1,0 +1,14 @@
+name = "pansou"
+main = "src/index.ts"
+compatibility_date = "2024-09-23"
+compatibility_flags = ["nodejs_compat"]
+
+[vars]
+DEFAULT_CONCURRENCY = "8"
+CACHE_TTL = "300"
+TG_PROXY_URL = ""
+
+# KV：后台动态配置 + 缓存（命名空间 pansou-PANSOU_KV）
+[[kv_namespaces]]
+binding = "PANSOU_KV"
+id = "a61716cd354e4188b3d465cef2ac99f5"
